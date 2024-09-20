@@ -1,51 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robotic University Team</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-        h1 {
-            margin: 0;
-        }
-        main {
-            margin: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Mobius Robotics</title>
+    <link rel="logo" type="image/png" href="images/logo.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Welcome to Mobius Robotics!</h1>
+        <div class="navbar bg-base-100">
+            <div class="flex-none">
+                <details class="dropdown">
+                    <summary class="btn m-1">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 stroke-current">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                    </summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a href="#eurobot">Eurobot</a></li>
+                        <li><a href="#spazzino">Spazzino</a></li>
+                        <li><a href="#galleria">Galleria</a></li>
+                        <li><a href="#chisiamo">Chi siamo</a></li>
+                    </ul>
+                </details>
+            </div>
+            <div class="absolute left-1/2 transform -translate-x-1/2">
+              <h1 class="font-semibold content-center justify-center text-xl">Mobius Robotics</h1>
+            </div>
+          </div>
     </header>
 
-    <main>
-        <p>This is a simple test page to ensure everything is working correctly.</p>
-    </main>
+    <div class="flex flex-col p-4 gap-4">
+        <div class="flex flex-col items-center gap-4">
+            <img src="images/logo.jpeg" alt="Mobius Robotics Logo" class="center">
+            <p class="text-center">Motto del team (se c'è) e brevissima descrizione di chi siamo e cosa facciamo per dare un'idea. Lorem, ipsum dolor sit amet consectetur elit.</p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+            <h1 id="eurobot" class="font-semibold content-center justify-center text-xl text-center">Eurobot</h1>
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQHuMgpDSIWhZA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1715447559426?e=1729728000&v=beta&t=bAhbSQm9cq88-3P_lDfIapCL3oBa3Pc_FfXsI_oQXJc" alt="Eurobot" class="center">
+            <p>Descrizione su cosa è Eurobot, come funziona e alcune foto dello scorso anno. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQEzGiXBFNvzBw/feedshare-shrink_1280/feedshare-shrink_1280/0/1715203944145?e=1729728000&v=beta&t=WDxCaV9Zx6xjuSABHQsxxT8kp8HDOAB0zPVZh25E-MQ" alt="Loki" class="center">
+        </div>
+        <div class="flex flex-col items-center gap-4">
+            <h1 id="spazzino" class="font-semibold content-center justify-center text-xl text-center">Spazzino</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+            <h1 id="galleria" class="font-semibold content-center justify-center text-xl text-center">Galleria</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus.</p>
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGREkCO89XkfQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1703352310847?e=1729728000&v=beta&t=3UvUjNYrTmLUjgG9RHn-Gd6L3tD_MrTqCSqMJvjph3k" alt="Team" class="center">
+        </div>
+        <div class="flex flex-col items-center gap-4">
+            <h1 id="chisiamo" class="font-semibold content-center justify-center text-xl text-center">Chi siamo</h1>
+            <p>Descrizione su chi siamo, quando è nato, di cosa ci occupiamo, etc... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4D22AQFpvPHhT5KcsA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025014441?e=1729728000&v=beta&t=aZnbehsXYlaASKfal0slWfyF4cB-O4X6NAkjX_X4Lt4"
+                    class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide7" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4D22AQGeO-NjEXJLnQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025015034?e=1729728000&v=beta&t=m7q-JNYPtri5g8p7db06zyAk6NZrhFiWjcV0NZXbD8k"
+                    class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4D22AQGDJVvpUsTP_Q/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025014782?e=1729728000&v=beta&t=L9zQSD--3X1Uiob3lV8iCJ_prZTzjTPjN6Q2ee6FwpE"
+                    class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4D22AQFNJWUDk2COtw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025014793?e=1729728000&v=beta&t=F235FFh7vOUIQifbmk8oJ9qtY70hI3rNxtZFXvudJsA"
+                    class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide5" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide5" class="carousel-item relative w-full">
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D22AQHsqXJQ0jtMDw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025013717?e=1729728000&v=beta&t=H1jsWahs5A-RVfDy-o7RtonuO8e1hS1ogISbTidaRkE"
+                      class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                      <a href="#slide4" class="btn btn-circle">❮</a>
+                      <a href="#slide6" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide6" class="carousel-item relative w-full">
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D22AQFBPBdFOOccdg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025011910?e=1729728000&v=beta&t=ahwPQgq11XpVfqkLooZlFQx6W_tppXD4DiqkvlDGbsA"
+                      class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                      <a href="#slide5" class="btn btn-circle">❮</a>
+                      <a href="#slide7" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide7" class="carousel-item relative w-full">
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D22AQHooY6z4wEXyw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025013904?e=1729728000&v=beta&t=x8LfrKphxYZsr6rJ6lWh3wMBt8-4I2w_o7RLlc_75S8"
+                      class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                      <a href="#slide6" class="btn btn-circle">❮</a>
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Mobius Robotics Team - University of Palermo</p>
-    </footer>
+    <footer class="footer bg-neutral text-neutral-content p-8 mt-4">
+        <nav>
+            <h6 class="footer-title">Team</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contatti</a>
+            <a class="link link-hover">Dove trovarci</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/mobius_robotics_team" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/mobius-robotics-team/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+            </a>
+            <a href="https://t.me/Mobius_Robotics_News" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38"/></svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
 
 </body>
 </html>
