@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Revamped';
+        src: url('../src/fonts/revamped.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
