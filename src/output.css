@@ -8665,6 +8665,18 @@ html:has(.drawer-open.drawer-open) {
   width: 100%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
 .flex-none {
   flex: none;
 }
@@ -9209,10 +9221,24 @@ html:has(.drawer-open.drawer-open) {
   gap: 2rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-32 {
+  row-gap: 8rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -9818,6 +9844,16 @@ html:has(.drawer-open.drawer-open) {
   padding-right: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -9885,6 +9921,11 @@ html:has(.drawer-open.drawer-open) {
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -10489,6 +10530,92 @@ html:has(.drawer-open.drawer-open) {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:max-w-64 {
+    max-width: 16rem;
+  }
+
+  .md\:flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .md\:shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .md\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-24 {
+    gap: 6rem;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
