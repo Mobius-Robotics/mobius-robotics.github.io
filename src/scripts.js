@@ -1,16 +1,31 @@
-const themeToggle = document.getElementById('theme-toggle');
-loadSystemTheme();
+window.addEventListener("load", (event) => {
+  //Page is fully loaded
+  const themeToggle = document.getElementById('theme-toggle');
+  loadSystemTheme();
 
-function loadSystemTheme() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-    themeToggle.checked = prefersDark;
-}
+  function loadSystemTheme() {
+    let preferredTheme = localStorage.getItem('theme') || null;
 
-themeToggle.addEventListener('change', function() {
-    const theme = this.checked ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', theme);
+    if (preferredTheme) {
+      document.documentElement.setAttribute('data-theme', preferredTheme);
+      themeToggle.checked = preferredTheme === 'dark';
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      preferredTheme = prefersDark ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', preferredTheme);
+      themeToggle.checked = preferredTheme === 'dark';
+    }
+    
+    localStorage.setItem('theme', preferredTheme);
+  }
+
+  themeToggle.addEventListener('change', function() {
+      const theme = this.checked ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
   });
+
+});
 
 /* let translations = {};
 fetch('src/translations.json')
