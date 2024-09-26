@@ -5,10 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobius Robotics - Eurobot</title>
-  <link rel="icon" type="image/png" href="src/images/logo.png">
+  <link rel="icon" type="image/png" href="../src/images/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../src/output.css" rel="stylesheet">
   <script src="../src/scripts.js" async></script>
+
+  <meta property="og:title" content="Mobius Robotics">
+  <meta property="og:description" content="Innovation, creativity and passion, the robotics that adapts to every challenge!">
+  <meta property="og:image" content="https://mobius-robotics.github.io/src/images/logo.png">
+  <meta property="og:url" content="https://mobius-robotics.github.io/">
+  <meta name="theme-color" content="base-200" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="base-200" media="(prefers-color-scheme: dark)">
 </head>
 
 <body class="min-h-dvh scroll-smooth antialiased transition-colors">
@@ -51,15 +58,26 @@
     </label>
   </header>
 
-  <div class="flex flex-col p-4 gap-4">
-    <div class="flex flex-col items-center gap-4">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Logo_Eurobot.svg/1200px-Logo_Eurobot.svg.png" alt="Eurobot logo" class="center w-40">
-        <img src="https://media.licdn.com/dms/image/v2/D4D22AQHuMgpDSIWhZA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1715447559426?e=1729728000&v=beta&t=bAhbSQm9cq88-3P_lDfIapCL3oBa3Pc_FfXsI_oQXJc" alt="Eurobot" class="center">
-        <p>Descrizione su cosa è Eurobot, come funziona e alcune foto dello scorso anno. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
-        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEzGiXBFNvzBw/feedshare-shrink_1280/feedshare-shrink_1280/0/1715203944145?e=1729728000&v=beta&t=WDxCaV9Zx6xjuSABHQsxxT8kp8HDOAB0zPVZh25E-MQ" alt="Loki" class="center">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+  <div class="flex flex-col p-4 gap-4 items-center">
+    <h2 class="font-semibold content-center justify-center text-xl text-center font-revamped">Eurobot</h1>
+    <div class="flex flex-col items-center gap-4 md:flex-row md:justify-center md:px-4">
+      <a href="https://www.eurobot.org/" target="_blank"><img src="../src/images/logo_eurobot.png" alt="Eurobot logo" class="center md:w-52"></a>
+      <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos tempora expedita itaque illo nostrum, omnis porro possimus atque magni voluptas eligendi at est eius eveniet excepturi praesentium facere quam?</p>
     </div>
-</div>
+    <div class="flex flex-col gap-4 md:flex-row md:justify-center md:gap-0">
+      <div class="md:basis-1/2 md:p-4"> <img src="../src/images/eurobot.jpeg" alt="Eurobot" class="center"></div>
+      <div class="md:basis-1/2 md:p-4"> <img src="../src/images/eurobot_2.jpeg" alt="Eurobot" class="center"></div>
+    </div>
+    <p class="md:px-4">Descrizione su cosa è Eurobot, come funziona e alcune foto dello scorso anno. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+    <div class="flex flex-col gap-4 md:flex-row md:justify-center md:flex-wrap md:gap-0">
+      <div class="md:basis-1/4 md:p-4"><img src="../src/images/eurobot_3.jpeg" alt="Eurobot" class="center"></div>
+      <div class="md:basis-1/4 md:p-4"><img src="../src/images/eurobot_4.jpeg" alt="Eurobot" class="center"></div>
+      <div class="md:basis-1/4 md:p-4"><img src="../src/images/eurobot_5.jpeg" alt="Eurobot" class="center"></div>
+      <div class="md:basis-1/4 md:p-4"><img src="../src/images/eurobot_6.jpeg" alt="Eurobot" class="center"></div>
+    </div>
+    <p class="md:px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem nobis distinctio, reiciendis culpa quia natus, fugiat ullam eius dolor quam dolorum doloribus corrupti, nisi aspernatur minima temporibus aut asperiores.</p>
+    <a href="../loki" class="btn btn-active btn-secondary my-4">See Loki in Detail</a>
+  </div>
 
   <footer class="footer bg-primary text-neutral-content p-8 mt-4">
     <nav>
