@@ -16,7 +16,7 @@
 - [x] Eurobot
 - [x] Loki
 - [x] Dinamino
-- [ ] Gallery
+- [x] Gallery
 
 ## Frameworks and Libraries
 [DaisyUI](https://daisyui.com/)  
