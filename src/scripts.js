@@ -27,6 +27,20 @@ window.addEventListener("load", (event) => {
 
 });
 
+function openImage(src) {
+  const overlay = document.getElementById('overlay');
+  const overlayImage = document.getElementById('overlayImage');
+  
+  overlayImage.src = src;
+  overlay.classList.remove('hidden');
+}
+
+function closeImage() {
+  const overlay = document.getElementById('overlay');
+  overlay.classList.add('hidden');
+}
+
+
 /* let translations = {};
 fetch('src/translations.json')
   .then(response => response.json())

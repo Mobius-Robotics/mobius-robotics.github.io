@@ -13,9 +13,9 @@
 
 ## Pagine
 - [x] Index
-- [ ] Eurobot
-- [ ] Loki
-- [ ] Spazzino
+- [x] Eurobot
+- [x] Loki
+- [x] Dinamino
 - [ ] Gallery
 
 ## Frameworks and Libraries
