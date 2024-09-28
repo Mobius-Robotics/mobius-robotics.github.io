@@ -48,14 +48,10 @@ public/build/
 *.sw?
 
 # Tailwind config files
-tailwind.config.js
-tailwind.config.ts
 
 # PostCSS config file
-postcss.config.js
 
 # Webpack config file
-webpack.config.js
 
 # Temp directories
 tmp/
