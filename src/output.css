@@ -8470,12 +8470,12 @@ html:has(.drawer-open.drawer-open) {
   isolation: auto;
 }
 
-.z-\[1\] {
-  z-index: 1;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .float-start {
@@ -8643,8 +8643,8 @@ html:has(.drawer-open.drawer-open) {
   display: none;
 }
 
-.h-32 {
-  height: 8rem;
+.h-24 {
+  height: 6rem;
 }
 
 .h-5 {
@@ -8659,10 +8659,6 @@ html:has(.drawer-open.drawer-open) {
   height: auto;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -8671,8 +8667,12 @@ html:has(.drawer-open.drawer-open) {
   min-height: 100dvh;
 }
 
-.w-32 {
-  width: 8rem;
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-5 {
@@ -8709,14 +8709,6 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .max-w-full {
@@ -10584,12 +10576,12 @@ html:has(.drawer-open.drawer-open) {
     height: 8rem;
   }
 
-  .md\:w-72 {
-    width: 18rem;
-  }
-
   .md\:w-32 {
     width: 8rem;
+  }
+
+  .md\:w-72 {
+    width: 18rem;
   }
 
   .md\:basis-1\/2 {
@@ -10653,6 +10645,12 @@ html:has(.drawer-open.drawer-open) {
 
 @media (min-width: 1024px) {
   .lg\:w-1\/2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-1\/2 {
     width: 50%;
   }
 }

@@ -17,7 +17,7 @@
   <meta name="theme-color" content="base-100">
 </head>
 
-<body class="min-h-dvh scroll-smooth antialiased transition-colors">
+<body class="min-h-dvh scroll-smooth antialiased transition-colors flex flex-col">
 
   <header class="navbar bg-primary flex justify-between gap-4 items-center">
     <details class="dropdown">
@@ -55,7 +55,9 @@
     </label>
   </header>
 
-  <img src="../src/images/poster_loki.jpg" alt="Loki Poster" class="lg:w-1/2 h-auto mx-auto p-4"/>
+  <div class="flex-grow">
+    <img src="../src/images/poster_loki.jpg" alt="Loki Poster" class="xl:w-1/2 h-auto mx-auto p-4"/>
+  </div>
 
   <footer class="footer bg-primary text-neutral-content p-8 mt-4">
     <nav>
