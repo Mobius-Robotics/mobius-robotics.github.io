@@ -8841,6 +8841,10 @@ html:has(.drawer-open.drawer-open) {
   max-width: none;
 }
 
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
