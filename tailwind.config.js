@@ -31,7 +31,7 @@ module.exports = {
           "accent": "#EA6947",
           "neutral": "#23282E",
           "base-100": "#202020",
-          "info": "#0091D5",
+          "info": "#2790c3", //Custom for Paypal
           "success": "#6BB187",
           "warning": "#DBAE59",
           "error": "#AC3E31",

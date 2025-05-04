@@ -16,9 +16,10 @@ The website features a clean layout, a theme toggle (light/dark), and colors ins
 
 ## To Do:
 - [ ] Add button to change language
-- [ ] Add donation buttons
+- [x] Add donation buttons
 - [ ] Make the colors of header, footer and buttons cooler (and less bright!)
 - [ ] Modify about section with photos that scroll with js
+- [x] Add Sponsors page
 
 ## Frameworks and Libraries
 [DaisyUI](https://daisyui.com/)  
