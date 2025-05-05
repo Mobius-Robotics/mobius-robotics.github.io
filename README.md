@@ -9,7 +9,7 @@
 The website features a clean layout, a theme toggle (light/dark), and colors inspired by our logo. It's hosted on GitHub Pages and styled with TailwindCSS and DaisyUI.
 
 <p align="center">
-  <a href="https://learn.unity.com/pathway/junior-programmer" target="_blank">
+  <a href="https://mobius-robotics.github.io/" target="_blank">
     <img src="https://github.com/Mobius-Robotics/mobius-robotics.github.io/blob/new/src/images/logo.png" alt="Mobius Logo" style="width:200px;height:auto;">
   </a>
 </p>
@@ -19,6 +19,8 @@ Our website was proudly showcased during the [SHARPER Night](https://sharper-nig
 
 You can read more about our participation in the official article on the SHARPER website:  
 🔗 [DIREZIONE FUTURO: ROBOTICA, SOSTENIBILITÀ E MODA](https://www.sharper-night.it/evento/dimostrazione-direzione-futuro-robotica-sostenibilita-e-moda/)
+
+<img src="https://github.com/Mobius-Robotics/mobius-robotics.github.io/blob/new/src/images/totem1.JPG" alt="Totem1" style="width:50%;height:auto;">
 
 ## To Do:
 - [ ] Add button to change language
