@@ -28,6 +28,7 @@ You can read more about our participation in the official article on the SHARPER
 - [x] Add Sponsors page
 - [ ] Fix a bug where the Logo Image is not shown in the link preview
 - [ ] Add a simple animation to the Paypal button
+- [ ] Redo the entire website with a framework like [petite-vue](https://github.com/vuejs/petite-vue) or [astrojs](https://astro.build/)
 
 ## Frameworks and Libraries
 [DaisyUI](https://daisyui.com/)  
