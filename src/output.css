@@ -8479,6 +8479,10 @@ html:has(.drawer-open.drawer-open) {
   inset-inline-end: 0.25rem;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .left-5 {
   left: 1.25rem;
 }
@@ -8497,10 +8501,6 @@ html:has(.drawer-open.drawer-open) {
 
 .top-4 {
   top: 1rem;
-}
-
-.left-1\/2 {
-  left: 50%;
 }
 
 .isolate {
@@ -8841,10 +8841,6 @@ html:has(.drawer-open.drawer-open) {
   max-width: none;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -8941,13 +8937,13 @@ html:has(.drawer-open.drawer-open) {
   transform-origin: top right;
 }
 
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -9516,6 +9512,10 @@ html:has(.drawer-open.drawer-open) {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -11042,6 +11042,10 @@ html:has(.drawer-open.drawer-open) {
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-32 {
     height: 8rem;
   }
@@ -11088,6 +11092,10 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:gap-24 {
     gap: 6rem;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:p-0 {

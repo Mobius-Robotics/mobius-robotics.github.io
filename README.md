@@ -21,6 +21,7 @@ The website features a clean layout, a theme toggle (light/dark), and colors ins
 - [ ] Modify about section with photos that scroll with js
 - [x] Add Sponsors page
 - [ ] Fix a bug where the Logo Image is not shown in the link preview
+- [ ] Add a simple animation to the Paypal button
 
 ## Frameworks and Libraries
 [DaisyUI](https://daisyui.com/)  
