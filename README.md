@@ -14,6 +14,12 @@ The website features a clean layout, a theme toggle (light/dark), and colors ins
   </a>
 </p>
 
+### 📸 Featured at SHARPER Night 2024  
+Our website was proudly showcased during the [SHARPER Night](https://sharper-night.it/) (European Researchers' Night) 2024 at the University of Palermo. During the event, visitors had the opportunity to explore our projects and get an inside look at our robots through the site.
+
+You can read more about our participation in the official article on the SHARPER website:  
+🔗 [DIREZIONE FUTURO: ROBOTICA, SOSTENIBILITÀ E MODA](https://www.sharper-night.it/evento/dimostrazione-direzione-futuro-robotica-sostenibilita-e-moda/)
+
 ## To Do:
 - [ ] Add button to change language
 - [x] Add donation buttons
